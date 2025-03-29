@@ -3,19 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>my first website</title>
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .login-container {
+            background: #fff;
+            padding: 20px 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        .login-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        .form-group label {
+            display: block;
+            color: #555;
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .login-btn {
+            background-color: #1a73e8;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .login-btn:hover {
+            background-color: #155db2;
+        }
+    </style>
 </head>
 <body>
-    <h1>praveen</h1>
-    <h1>kumar</h1>
-    <img src="tvk.webp" width="200px" alt="">
-    <p>tvk vijay</p>
-    <p>Joseph Vijay Chandrasekhar, known professionally as Vijay, is an Indian actor and playback singer who works in Tamil cinema.
-        Born: 22 June 1974 (age 50 years), Chennai
-        Spouse: Sangeetha Sornalingam (m. 1999)
-        Party: Tamilaga Vettri Kazhagam
-        Children: Jason Sanjay, Divya Saasha
-        Full name: Joseph Vijay Chandrasekhar</p>
-        <img src="vjmovies.jpg" alt="">
+    <div class="login-container">
+        <h2>Login</h2>
+        <form>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter your username">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password">
+            </div>
+            <button type="submit" class="login-btn">Login</button>
+        </form>
+    </div>
 </body>
 </html>
